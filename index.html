@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>calculator</title>
+    <meta name="viewport" content="initial-scale=1, width=width-device">
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+
+    <p class="paragraph"></p>
+    <div class="num-container">
+
+      <div class="div">
+          
+        <button class="normal-buttons js-numbers" onclick="
+          updateCalculation('1');
+          displayCalculation();
+        ">1</button>
+        <button class="normal-buttons js-numbers" onclick="
+          updateCalculation('4');
+          displayCalculation();
+        ">4</button>
+        <button class="normal-buttons" onclick="
+          updateCalculation('7');
+          displayCalculation();
+        ">7</button>
+        <button class="normal-buttons" onclick="
+          updateCalculation('0');
+          displayCalculation();
+        ">0</button>
+      
+      </div>
+
+      <div class="div">
+          
+        <button class="normal-buttons js-numbers" onclick="
+          updateCalculation('2');
+          displayCalculation();
+        ">2</button>
+        <button class="normal-buttons js-numbers" onclick="
+          updateCalculation('5');
+          displayCalculation();
+        ">5</button>
+        <button class="normal-buttons js-numbers" onclick="
+          updateCalculation('8');
+          displayCalculation();
+        ">8</button>
+        <button class="normal-buttons js-numbers" onclick="
+          updateCalculation('.');
+          displayCalculation();
+        ">.</button>
+      
+      </div>
+
+      <div class="div">
+
+        <button class="normal-buttons js-numbers" onclick="
+          updateCalculation('3');
+          displayCalculation();
+        ">3</button>
+        <button class="normal-buttons js-numbers" onclick="
+          updateCalculation('6');
+          displayCalculation();
+       ">6</button>
+        <button class="normal-buttons js-numbers" onclick="
+          updateCalculation('9');
+          displayCalculation();
+       ">9</button>
+        <button class="normal-buttons" onclick="
+          calculation = eval(calculation);
+          displayCalculation();
+       ">=</button>
+
+      </div>
+
+      <div class="div">
+
+        <button class="operations-button" onclick="
+          updateCalculation('+');
+          displayCalculation();
+        ">+</button>
+        <button class="operations-button" onclick="
+          updateCalculation('-');
+          displayCalculation();
+        ">-</button>
+        <button class="operations-button" onclick="
+          updateCalculation('*');
+          displayCalculation();
+        ">*</button>
+        <button class="operations-button" onclick="
+          updateCalculation('/');
+          displayCalculation();
+       ">/</button>
+
+      </div>
+
+      </div>
+
+  <div>
+
+    <button class="clear" onclick="
+      calculation = '';
+      displayCalculation();
+    ">Clear</button>
+
+
+  
+
+    <script src="script.js"></script>
+      
+  </body>
+</html>
